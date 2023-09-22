@@ -1,13 +1,15 @@
 // Trabalho em Equipe: Desenvolvimento de um Programa CLI em JavaScript
 // Cliente: XYZ Solutions
 // Tema: Sistema de Reservas de Salas de Reunião
-
 // Descrição do Projeto:
 // A XYZ Solutions deseja desenvolver um sistema de gerenciamento de reservas de
 // salas de reunião em JavaScript para ser executado em linha de comando (CLI). O
 // sistema deve permitir que os usuários criem, visualizem, editem e cancelem
 // reservas de salas de reunião. Cada reserva deve conter informações como nome
 // do solicitante, data, horário, sala desejada e finalidade da reunião.
+
+// Feito por Pedro Costa e Yago da Cruz
+// Projeto idealizado no curso de Introdução ao desenvolvimento com JavaScript no SenacRS
 
 let listaDeSalas = ['Sala0','Sala1','Sala2','Sala3','Sala4','Sala5','Sala6','Sala7','Sala8','Sala9']
 for (let i = 0; i <= 10; i++) {
@@ -111,7 +113,7 @@ function exibirMenu(){
     console.log('Para visualizar as salas existentes, digite VISUALIZAR')
     console.log('Para editar uma reserva, digite EDITAR')
     console.log('Para cancelar uma reserva, digite CANCELAR')
-    console.log('Para reinicar o sistema, digite REINICIAR')
+    console.log('Para fechar o sistema, digite FECHAR')
     console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
 }
 
@@ -148,14 +150,9 @@ function funcaoDaAcao(){
 }    
 }
 
+
 console.log('Bem-vindo ao sistema de gerenciamento de reservas de salas de reunião da XYZ Solutions')
 console.log('Aqui você pode criar, visualizar, editar e cancelar as salas de reunião')
 console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-console.log('Para fazer uma reserva, digite RESERVAR')
-console.log('Para visualizar as salas existentes, digite VISUALIZAR')
-console.log('Para editar uma reserva, digite EDITAR')
-console.log('Para cancelar uma reserva, digite CANCELAR')
-console.log('Para fechar o sistema, digite FECHAR')
-console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-
+exibirMenu()
 funcaoDaAcao()
