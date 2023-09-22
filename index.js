@@ -43,7 +43,13 @@ for (let i = 0; i < 10; i++) {
 }
 
 function reservarSala(salaEscolhida){
-    visualizarSalas()
+    console.log('Essas são as salas disponíveis:')
+    for (let i = 0; i < 10; i++) {
+        if (listaDeSalas[i].nome === null){
+            console.log(listaDeSalas[i].nomeDaSala)
+        }
+    
+    }
     salaEscolhida = Number(prompt('Digite o número da sala de preferência'))
     switch (salaEscolhida){
         case 0:
@@ -147,6 +153,15 @@ switch (acaoDoUsuario){
         cancelarReserva()
         break;
     default:
+        console.log('Bem-vindo ao sistema de gerenciamento de reservas de salas de reunião da XYZ Solutions')
+        console.log('Aqui você pode criar, visualizar, editar e cancelar as salas de reunião')
+        console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+        console.log('Para fazer uma reserva, digite RESERVAR')
+        console.log('Para visualizar as salas existentes, digite VISUALIZAR')
+        console.log('Para editar uma reserva, digite EDITAR')
+        console.log('Para cancelar uma reserva, digite CANCELAR')
+        console.log('Para reinicar o sistema, digite REINICIAR')
+        console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
         break;
 }
 
