@@ -9,6 +9,7 @@
 // reservas de salas de reunião. Cada reserva deve conter informações como nome
 // do solicitante, data, horário, sala desejada e finalidade da reunião.
 
+
 console.log('Bem-vindo ao sistema de gerenciamento de reservas de salas de reunião da XYZ Solutions')
 console.log('Aqui você pode criar, visualizar, editar e cancelar as salas de reunião')
 console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
@@ -21,100 +22,28 @@ console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-
 
 
 let listaDeSalas = ['Sala0','Sala1','Sala2','Sala3','Sala4','Sala5','Sala6','Sala7','Sala8','Sala9']
-listaDeSalas[0]= {
-    nomeDaSala: 'Sala 0',
-    nome: null,
-    data: null,
-    horario: null,
-    finalidade: null,
-}
-listaDeSalas[1]= {
-    nomeDaSala: 'Sala 1',
-    nome: null,
-    data: null,
-    horario: null,
-    finalidade: null,
-}
-listaDeSalas[2]= {
-    nomeDaSala: 'Sala 2',
-    nome: null,
-    data: null,
-    horario: null,
-    finalidade: null,
-}
-listaDeSalas[3]= {
-    nomeDaSala: 'Sala 3',
-    nome: null,
-    data: null,
-    horario: null,
-    finalidade: null,
-}
-listaDeSalas[4]= {
-    nomeDaSala: 'Sala 4',
-    nome: null,
-    data: null,
-    horario: null,
-    finalidade: null,
-}
-listaDeSalas[5]= {
-    nomeDaSala: 'Sala 5',
-    nome: null,
-    data: null,
-    horario: null,
-    finalidade: null,
-}
-listaDeSalas[6]= {
-    nomeDaSala: 'Sala 6',
-    nome: null,
-    data: null,
-    horario: null,
-    finalidade: null,
-}
-listaDeSalas[7]= {
-    nomeDaSala: 'Sala 7',
-    nome: null,
-    data: null,
-    horario: null,
-    finalidade: null,
-}
-listaDeSalas[8]= {
-    nomeDaSala: 'Sala 8',
-    nome: null,
-    data: null,
-    horario: null,
-    finalidade: null,
-}
-listaDeSalas[9]= {
-    nomeDaSala: 'Sala 9',
-    nome: null,
-    data: null,
-    horario: null,
-    finalidade: null,
+for (let i = 0; i <= 10; i++) {
+    listaDeSalas[i]= {
+        nomeDaSala: 'Sala '+i,
+        nome: null,
+        data: null,
+        horario: null,
+        finalidade: null,
+    }
 }
 
-function reservarSala(nome,data,horario,finalidade,salaEscolhida){
+function  visualizarSalas(){
     console.log('Essas são as salas disponíveis:')
-    if (listaDeSalas[0].nome === null){
-        console.log(listaDeSalas[0].nomeDaSala)
-    }if (listaDeSalas[1].nome === null){
-        console.log(listaDeSalas[1].nomeDaSala)
-    }if (listaDeSalas[2].nome === null){
-        console.log(listaDeSalas[2].nomeDaSala)
-    }if (listaDeSalas[3].nome === null){
-        console.log(listaDeSalas[3].nomeDaSala)
-    }if (listaDeSalas[4].nome === null){
-        console.log(listaDeSalas[4].nomeDaSala)
-    }if (listaDeSalas[5].nome === null){
-        console.log(listaDeSalas[5].nomeDaSala)
-    }if (listaDeSalas[6].nome === null){
-        console.log(listaDeSalas[6].nomeDaSala)
-    }if (listaDeSalas[7].nome === null){
-        console.log(listaDeSalas[7].nomeDaSala)
-    }if (listaDeSalas[8].nome === null){
-        console.log(listaDeSalas[8].nomeDaSala)
-    }if (listaDeSalas[9].nome === null){
-        console.log(listaDeSalas[9].nomeDaSala)
+for (let i = 0; i < 10; i++) {
+    if (listaDeSalas[i].nome === null){
+        console.log(listaDeSalas[i].nomeDaSala)
     }
+
+}funcaoDaAcao()
+}
+
+function reservarSala(salaEscolhida){
+    visualizarSalas()
     salaEscolhida = Number(prompt('Digite o número da sala de preferência'))
     switch (salaEscolhida){
         case 0:
@@ -138,6 +67,55 @@ function reservarSala(nome,data,horario,finalidade,salaEscolhida){
             listaDeSalas[2].finalidade = prompt('Qual a finalidade da sua reunião?')
             console.log(listaDeSalas[2])
             break;
+        case 3:
+            listaDeSalas[3].nome = prompt('Qual o seu nome?')
+            listaDeSalas[3].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
+            listaDeSalas[3].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
+            listaDeSalas[3].finalidade = prompt('Qual a finalidade da sua reunião?')
+            console.log(listaDeSalas[3])
+            break;
+        case 4:
+            listaDeSalas[4].nome = prompt('Qual o seu nome?')
+            listaDeSalas[4].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
+            listaDeSalas[4].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
+            listaDeSalas[4].finalidade = prompt('Qual a finalidade da sua reunião?')
+            console.log(listaDeSalas[4])
+            break;
+        case 5:
+            listaDeSalas[5].nome = prompt('Qual o seu nome?')
+            listaDeSalas[5].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
+            listaDeSalas[5].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
+            listaDeSalas[5].finalidade = prompt('Qual a finalidade da sua reunião?')
+            console.log(listaDeSalas[5])
+            break;
+        case 6:
+            listaDeSalas[6].nome = prompt('Qual o seu nome?')
+            listaDeSalas[6].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
+            listaDeSalas[6].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
+            listaDeSalas[6].finalidade = prompt('Qual a finalidade da sua reunião?')
+            console.log(listaDeSalas[6])
+            break;
+        case 7:
+            listaDeSalas[7].nome = prompt('Qual o seu nome?')
+            listaDeSalas[7].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
+            listaDeSalas[7].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
+            listaDeSalas[7].finalidade = prompt('Qual a finalidade da sua reunião?')
+            console.log(listaDeSalas[7])
+            break;
+        case 8:
+            listaDeSalas[8].nome = prompt('Qual o seu nome?')
+            listaDeSalas[8].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
+            listaDeSalas[8].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
+            listaDeSalas[8].finalidade = prompt('Qual a finalidade da sua reunião?')
+            console.log(listaDeSalas[8])
+            break;
+        case 9:
+            listaDeSalas[9].nome = prompt('Qual o seu nome?')
+            listaDeSalas[9].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
+            listaDeSalas[9].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
+            listaDeSalas[9].finalidade = prompt('Qual a finalidade da sua reunião?')
+            console.log(listaDeSalas[9])
+            break;
         default:
             console.log('Sala inválida')
             break;
@@ -145,13 +123,36 @@ function reservarSala(nome,data,horario,finalidade,salaEscolhida){
     }
 } 
 
+function editarReserva(){
 
-let acaoDoUsuario = prompt('Digite sua Ação')
+}
+function cancelarReserva(){
 
-if (acaoDoUsuario==='RESERVAR'){
-    reservarSala()
 }
 
+
+function funcaoDaAcao(){
+    let acaoDoUsuario = prompt('Digite sua Ação')
+switch (acaoDoUsuario){
+    case 'RESERVAR':
+        reservarSala()
+        break;
+    case 'VISUALIZAR':
+        visualizarSalas()
+        break;
+    case 'EDITAR':
+        editarReserva()
+        break;
+    case 'CANCELAR':
+        cancelarReserva()
+        break;
+    default:
+        break;
+}
+
+}
+
+funcaoDaAcao()
 
 // nome do solicitante, data, horário, sala desejada e finalidade da reunião
 
