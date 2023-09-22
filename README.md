@@ -1,4 +1,4 @@
-#  *Trabalho final do Senac RS*
+#  *Trabalho final Senac RS*
 ## *Trabalho final do curso de introdução ao desenvolvimento com JavaScript do Senac RS*
 
 - ***Trabalho em Equipe:*** Desenvolvimento de um Programa CLI em JavaScript
@@ -16,8 +16,21 @@ do solicitante, data, horário, sala desejada e finalidade da reunião.
 
 - ***Descrição do projeto:***  
 Ao todo teremos 9 salas, onde voce podera escolher e reservar só uma delas , como dito acima cada sala que voce escolher sera pedido seus dados e informações.
-além de reservar , voce tambem podera  **VISUALIZAR** , **EDITAR** e **CANCELAR**.
- 
+além de reservar , voce tambem poderá  **VISUALIZAR** , **EDITAR** e **CANCELAR**.
 
+- ***descrição detalhada***
+  criamos uma variavel chamada "lista de salas" onde la ,contem um array com as 9 salas criadas dentro delas a as informações exigidas.
+  Após isso criamos uma função na qual , permite que o usuario vizualize as salas disponiveis.
+  Junto disso criamos outra função que permite o usuario reservar salas , o programa mostra as salas disponiveis no momento junto das perguntas sobre os dados que exigimos
+  
+  
+
+
+
+
+- ***Autores***
+ Yago Henrique Oliviera
+ Pedro Henrique Leite da Costa
+ 
 
 
