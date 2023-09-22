@@ -55,6 +55,30 @@ function reservarSala(salaEscolhida){
 } 
 
 function editarReserva(){
+    console.log('Essas são as salas reservadas:')
+    for (let i = 0; i < 10; i++) {
+        if (listaDeSalas[i].nome !== null){
+            console.log(listaDeSalas[i].nomeDaSala)
+        }
+    } console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+    salaEscolhida = Number(prompt('Digite o número da sala de preferência para modificação'))
+    if (salaEscolhida <= 9 && salaEscolhida >= 0 && listaDeSalas[salaEscolhida].nome !== null){
+        console.log('A '+listaDeSalas[salaEscolhida].nomeDaSala+' havia sido reservada para '+listaDeSalas[salaEscolhida].nome+' no dia '+listaDeSalas[salaEscolhida].data+' ás '+listaDeSalas[salaEscolhida].horario+' com a finalidade: '+listaDeSalas[salaEscolhida].finalidade)
+        console.log('Insira os novos dados para modificação')
+        console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+        listaDeSalas[salaEscolhida].nome = prompt('Qual o seu nome?')
+        listaDeSalas[salaEscolhida].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
+        listaDeSalas[salaEscolhida].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
+        listaDeSalas[salaEscolhida].finalidade = prompt('Qual a finalidade da sua reunião?')
+        console.log('A '+listaDeSalas[salaEscolhida].nomeDaSala+' foi modificada e reservada para '+listaDeSalas[salaEscolhida].nome+' no dia '+listaDeSalas[salaEscolhida].data+' ás '+listaDeSalas[salaEscolhida].horario+' com a finalidade: '+listaDeSalas[salaEscolhida].finalidade)
+        console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+            exibirMenu()
+            funcaoDaAcao()
+}else{
+    console.log('Opção inválida, por favor, verifique se existem salas reservadas e digite um número válido')
+    console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+}
+
 
 }
 
@@ -77,9 +101,8 @@ function cancelarReserva(){
             exibirMenu()
             funcaoDaAcao()
 }else{
-    console.log('Opção inválida, por favor digite uma sala existente e reservada')
+    console.log('Opção inválida, por favor, verifique se existem salas reservadas e digite um número válido')
     console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-    cancelarReserva()
 }
     }
 
@@ -93,7 +116,7 @@ function exibirMenu(){
 }
 
 function funcaoDaAcao(){
-    let acaoDoUsuario = prompt('Digite sua Ação')
+    let acaoDoUsuario = prompt('Digite sua Ação').toUpperCase()
     switch (acaoDoUsuario){
         case 'RESERVAR':
             reservarSala()
@@ -105,19 +128,16 @@ function funcaoDaAcao(){
             break;
         case 'EDITAR':
             editarReserva()
+            exibirMenu()
+            funcaoDaAcao()
             break;
         case 'CANCELAR':
             cancelarReserva()
             exibirMenu()
             funcaoDaAcao()
             break;
-        case 'REINICIAR':
-            console.clear()
-            exibirMenu()
-            funcaoDaAcao()
-            break;
-        case 'ESCAPAR':
-            console.log('escapou')
+        case 'FECHAR':
+            console.log('Até logo :D ')
             break;
         default:
             console.log('Opção inválida, por favor digite um comando existente')
@@ -135,16 +155,7 @@ console.log('Para fazer uma reserva, digite RESERVAR')
 console.log('Para visualizar as salas existentes, digite VISUALIZAR')
 console.log('Para editar uma reserva, digite EDITAR')
 console.log('Para cancelar uma reserva, digite CANCELAR')
-console.log('Para reinicar o sistema, digite REINICIAR')
+console.log('Para fechar o sistema, digite FECHAR')
 console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
 
 funcaoDaAcao()
-
-// nome do solicitante, data, horário, sala desejada e finalidade da reunião
-
-// function reservarSala(nome,data,horario,finalidade){
-
-//    nome = prompt('Qual o seu nome?')
-//    data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
-//  horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
-//  finalidade = prompt('Qual a finalidade da sua reunião?')
