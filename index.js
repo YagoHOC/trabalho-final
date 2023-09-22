@@ -9,18 +9,6 @@
 // reservas de salas de reunião. Cada reserva deve conter informações como nome
 // do solicitante, data, horário, sala desejada e finalidade da reunião.
 
-
-console.log('Bem-vindo ao sistema de gerenciamento de reservas de salas de reunião da XYZ Solutions')
-console.log('Aqui você pode criar, visualizar, editar e cancelar as salas de reunião')
-console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-console.log('Para fazer uma reserva, digite RESERVAR')
-console.log('Para visualizar as salas existentes, digite VISUALIZAR')
-console.log('Para editar uma reserva, digite EDITAR')
-console.log('Para cancelar uma reserva, digite CANCELAR')
-console.log('Para reinicar o sistema, digite REINICIAR')
-console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-
-
 let listaDeSalas = ['Sala0','Sala1','Sala2','Sala3','Sala4','Sala5','Sala6','Sala7','Sala8','Sala9']
 for (let i = 0; i <= 10; i++) {
     listaDeSalas[i]= {
@@ -39,7 +27,7 @@ for (let i = 0; i < 10; i++) {
         console.log(listaDeSalas[i].nomeDaSala)
     }
 
-}funcaoDaAcao()
+} console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
 }
 
 function reservarSala(salaEscolhida){
@@ -48,124 +36,107 @@ function reservarSala(salaEscolhida){
         if (listaDeSalas[i].nome === null){
             console.log(listaDeSalas[i].nomeDaSala)
         }
-    
-    }
+    } console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
     salaEscolhida = Number(prompt('Digite o número da sala de preferência'))
-    switch (salaEscolhida){
-        case 0:
-            listaDeSalas[0].nome = prompt('Qual o seu nome?')
-            listaDeSalas[0].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
-            listaDeSalas[0].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
-            listaDeSalas[0].finalidade = prompt('Qual a finalidade da sua reunião?')
-            console.log(listaDeSalas[0])
-            break;
-        case 1:
-            listaDeSalas[1].nome = prompt('Qual o seu nome?')
-            listaDeSalas[1].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
-            listaDeSalas[1].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
-            listaDeSalas[1].finalidade = prompt('Qual a finalidade da sua reunião?')
-            console.log(listaDeSalas[1])
-            break;
-        case 2:
-            listaDeSalas[2].nome = prompt('Qual o seu nome?')
-            listaDeSalas[2].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
-            listaDeSalas[2].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
-            listaDeSalas[2].finalidade = prompt('Qual a finalidade da sua reunião?')
-            console.log(listaDeSalas[2])
-            break;
-        case 3:
-            listaDeSalas[3].nome = prompt('Qual o seu nome?')
-            listaDeSalas[3].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
-            listaDeSalas[3].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
-            listaDeSalas[3].finalidade = prompt('Qual a finalidade da sua reunião?')
-            console.log(listaDeSalas[3])
-            break;
-        case 4:
-            listaDeSalas[4].nome = prompt('Qual o seu nome?')
-            listaDeSalas[4].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
-            listaDeSalas[4].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
-            listaDeSalas[4].finalidade = prompt('Qual a finalidade da sua reunião?')
-            console.log(listaDeSalas[4])
-            break;
-        case 5:
-            listaDeSalas[5].nome = prompt('Qual o seu nome?')
-            listaDeSalas[5].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
-            listaDeSalas[5].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
-            listaDeSalas[5].finalidade = prompt('Qual a finalidade da sua reunião?')
-            console.log(listaDeSalas[5])
-            break;
-        case 6:
-            listaDeSalas[6].nome = prompt('Qual o seu nome?')
-            listaDeSalas[6].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
-            listaDeSalas[6].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
-            listaDeSalas[6].finalidade = prompt('Qual a finalidade da sua reunião?')
-            console.log(listaDeSalas[6])
-            break;
-        case 7:
-            listaDeSalas[7].nome = prompt('Qual o seu nome?')
-            listaDeSalas[7].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
-            listaDeSalas[7].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
-            listaDeSalas[7].finalidade = prompt('Qual a finalidade da sua reunião?')
-            console.log(listaDeSalas[7])
-            break;
-        case 8:
-            listaDeSalas[8].nome = prompt('Qual o seu nome?')
-            listaDeSalas[8].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
-            listaDeSalas[8].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
-            listaDeSalas[8].finalidade = prompt('Qual a finalidade da sua reunião?')
-            console.log(listaDeSalas[8])
-            break;
-        case 9:
-            listaDeSalas[9].nome = prompt('Qual o seu nome?')
-            listaDeSalas[9].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
-            listaDeSalas[9].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
-            listaDeSalas[9].finalidade = prompt('Qual a finalidade da sua reunião?')
-            console.log(listaDeSalas[9])
-            break;
-        default:
-            console.log('Sala inválida')
-            break;
-    
-    }
+    if (salaEscolhida <= 9 && salaEscolhida >= 0 && listaDeSalas[salaEscolhida].nome === null){
+            listaDeSalas[salaEscolhida].nome = prompt('Qual o seu nome?')
+            listaDeSalas[salaEscolhida].data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
+            listaDeSalas[salaEscolhida].horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
+            listaDeSalas[salaEscolhida].finalidade = prompt('Qual a finalidade da sua reunião?')
+            console.log('A '+listaDeSalas[salaEscolhida].nomeDaSala+' foi reservada para '+listaDeSalas[salaEscolhida].nome+' no dia '+listaDeSalas[salaEscolhida].data+' ás '+listaDeSalas[salaEscolhida].horario+' com a finalidade: '+listaDeSalas[salaEscolhida].finalidade)
+            console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+            exibirMenu()
+            funcaoDaAcao()
+}else{
+    console.log('Opção inválida, por favor digite uma sala existente e livre')
+    console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+    reservarSala()
+}
 } 
 
 function editarReserva(){
 
 }
+
+
 function cancelarReserva(){
-
+    console.log('Essas são as salas reservadas:')
+    for (let i = 0; i < 10; i++) {
+        if (listaDeSalas[i].nome !== null){
+            console.log(listaDeSalas[i].nomeDaSala)
+        }
+    } console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+    salaEscolhida = Number(prompt('Digite o número da sala de preferência para cancelamento'))
+    if (salaEscolhida <= 9 && salaEscolhida >= 0 && listaDeSalas[salaEscolhida].nome !== null){
+            listaDeSalas[salaEscolhida].nome = null
+            listaDeSalas[salaEscolhida].data = null
+            listaDeSalas[salaEscolhida].horario = null
+            listaDeSalas[salaEscolhida].finalidade = null
+            console.log('A reserva da '+listaDeSalas[salaEscolhida].nomeDaSala+' foi cancelada')
+            console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+            exibirMenu()
+            funcaoDaAcao()
+}else{
+    console.log('Opção inválida, por favor digite uma sala existente e reservada')
+    console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+    cancelarReserva()
 }
+    }
 
+function exibirMenu(){
+    console.log('Para fazer uma reserva, digite RESERVAR')
+    console.log('Para visualizar as salas existentes, digite VISUALIZAR')
+    console.log('Para editar uma reserva, digite EDITAR')
+    console.log('Para cancelar uma reserva, digite CANCELAR')
+    console.log('Para reinicar o sistema, digite REINICIAR')
+    console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+}
 
 function funcaoDaAcao(){
     let acaoDoUsuario = prompt('Digite sua Ação')
-switch (acaoDoUsuario){
-    case 'RESERVAR':
-        reservarSala()
-        break;
-    case 'VISUALIZAR':
-        visualizarSalas()
-        break;
-    case 'EDITAR':
-        editarReserva()
-        break;
-    case 'CANCELAR':
-        cancelarReserva()
-        break;
-    default:
-        console.log('Bem-vindo ao sistema de gerenciamento de reservas de salas de reunião da XYZ Solutions')
-        console.log('Aqui você pode criar, visualizar, editar e cancelar as salas de reunião')
-        console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-        console.log('Para fazer uma reserva, digite RESERVAR')
-        console.log('Para visualizar as salas existentes, digite VISUALIZAR')
-        console.log('Para editar uma reserva, digite EDITAR')
-        console.log('Para cancelar uma reserva, digite CANCELAR')
-        console.log('Para reinicar o sistema, digite REINICIAR')
-        console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
-        break;
+    switch (acaoDoUsuario){
+        case 'RESERVAR':
+            reservarSala()
+            break;
+        case 'VISUALIZAR':
+            visualizarSalas()
+            exibirMenu()
+            funcaoDaAcao()
+            break;
+        case 'EDITAR':
+            editarReserva()
+            break;
+        case 'CANCELAR':
+            cancelarReserva()
+            exibirMenu()
+            funcaoDaAcao()
+            break;
+        case 'REINICIAR':
+            console.clear()
+            exibirMenu()
+            funcaoDaAcao()
+            break;
+        case 'ESCAPAR':
+            console.log('escapou')
+            break;
+        default:
+            console.log('Opção inválida, por favor digite um comando existente')
+            console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+            exibirMenu()
+            funcaoDaAcao()
+            break;
+}    
 }
 
-}
+console.log('Bem-vindo ao sistema de gerenciamento de reservas de salas de reunião da XYZ Solutions')
+console.log('Aqui você pode criar, visualizar, editar e cancelar as salas de reunião')
+console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+console.log('Para fazer uma reserva, digite RESERVAR')
+console.log('Para visualizar as salas existentes, digite VISUALIZAR')
+console.log('Para editar uma reserva, digite EDITAR')
+console.log('Para cancelar uma reserva, digite CANCELAR')
+console.log('Para reinicar o sistema, digite REINICIAR')
+console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
 
 funcaoDaAcao()
 
@@ -177,4 +148,3 @@ funcaoDaAcao()
 //    data = prompt('Qual dia ocorrerá a reunião? (Use o formato dd/mm)')
 //  horario = prompt('Qual horário ocorrerá a reunião? (Use o formato hr:mn')
 //  finalidade = prompt('Qual a finalidade da sua reunião?')
-
