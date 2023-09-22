@@ -7,7 +7,7 @@
 
 - Tema: Sistema de Reservas de Salas de Reunião 
 
-Descrição do Projeto:
+- Descrição do Projeto:
 A XYZ Solutions deseja desenvolver um sistema de gerenciamento de reservas de
 salas de reunião em JavaScript para ser executado em linha de comando (CLI). O
 sistema deve permitir que os usuários criem, visualizem, editem e cancelem
