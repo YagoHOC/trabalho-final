@@ -1,4 +1,4 @@
-# trabalho-final
+#  Trabalho final do Senac RS
 Trabalho final do curso de introdução ao desenvolvimento com JavaScript do Senac RS
 
 Trabalho em Equipe: Desenvolvimento de um Programa CLI em JavaScript
