@@ -1,11 +1,11 @@
 #  *Trabalho final do Senac RS*
 ## *Trabalho final do curso de introdução ao desenvolvimento com JavaScript do Senac RS*
 
-- *Trabalho em Equipe:* Desenvolvimento de um Programa CLI em JavaScript
+- ***Trabalho em Equipe:*** Desenvolvimento de um Programa CLI em JavaScript
 
-- *Cliente:* XYZ Solutions
+- ***Cliente:*** XYZ Solutions
 
-- *Tema:* Sistema de Reservas de Salas de Reunião 
+- ***Tema:*** Sistema de Reservas de Salas de Reunião 
 
 - ***Descrição do Projeto:***
 A XYZ Solutions deseja desenvolver um sistema de gerenciamento de reservas de
