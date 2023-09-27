@@ -1,7 +1,7 @@
 #  Trabalho Final Senac RS
 ## Curso de introdução ao desenvolvimento com JavaScript 
 
-- **Trabalho em Equipe:** Desenvolvimento de um Programa CLI em JavaScript
+- **Trabalho:** Desenvolvimento de um Programa CLI em JavaScript
 
 - **Cliente:** XYZ Solutions
 
@@ -18,7 +18,7 @@ do solicitante, data, horário, sala desejada e finalidade da reunião.
 Ao todo teremos 9 salas, onde o usuário podera escolher e reservar a sala de sua escolha, também como visualizar, editar e cancelar salas já reservadas.
 Toda sala armazena o nome do reservante, para qual horário, qual dia e a finalidade escolhida.
 
-- **Metodologia**
+- **Metodologia:**
   Criamos uma variavel chamada "lista de salas", que contém um array com 9 salas pré-existentes e as informações exigidas também pré-preenchidas com o valor null.
   Após isso criamos uma função na qual , permite que o usuario vizualize as salas disponiveis, através de um for loop que verifica se o valor nome da sala é null, se esse for o caso, a 
   sala será descrita como disponível e impressa o seu respectivo número.
