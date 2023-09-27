@@ -33,12 +33,7 @@ for (let i = 0; i < 10; i++) {
 }
 
 function reservarSala(salaEscolhida){
-    console.log('Essas são as salas disponíveis:')
-    for (let i = 0; i < 10; i++) {
-        if (listaDeSalas[i].nome === null){
-            console.log(listaDeSalas[i].nomeDaSala)
-        }
-    } console.log('-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-')
+    visualizarSalas()
     salaEscolhida = Number(prompt('Digite o número da sala de preferência'))
     if (salaEscolhida <= 9 && salaEscolhida >= 0 && listaDeSalas[salaEscolhida].nome === null){
             listaDeSalas[salaEscolhida].nome = prompt('Qual o seu nome?')
